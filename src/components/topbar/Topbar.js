@@ -3,18 +3,19 @@ import "./topbar.scss";
 import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
 
-const topbar = () => {
+const topbar = ({menuOpen,setmenuOpen}) => {
   return (
-    <div className='topbar'>
+    <div className={"topbar " + (menuOpen && "active")}>
 
       <div className='wrapper'>
 
         <div className='left'>
 
-        <a href='#intro' className='logo'>asdf</a>
+        <a href='#intro' className='logo'>Portfolio</a>
 
         <div className='itemContainer'>
-        <PersonIcon className='icon' />
+          <PersonIcon className='icon' />
+          <span>+91 6563 89XXX</span>
 
         </div>
         
@@ -28,7 +29,12 @@ const topbar = () => {
         </div>
 
         <div className='right'>
-        <div className='hamburger'>
+          <div className='hamburger' onClick={()=>setmenuOpen(!menuOpen)} >
+
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+
          </div>
 
         </div>
