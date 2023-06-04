@@ -7,6 +7,8 @@ import Works from './components/works/Works';
 
 import Contact from './components/contact/Contact';
 import { useState } from 'react';
+import Menu from './components/menu/menu';
+
 
 
 
@@ -17,6 +19,7 @@ function App() {
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
+      <Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen}  />
       
       <div className='sections'> 
 
