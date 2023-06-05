@@ -2,12 +2,14 @@
 import './App.scss';
 import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
-import Portfolio from './components/portfolio/Portfolio';
+
 import Works from './components/works/Works';
 
 import Contact from './components/contact/Contact';
 import { useState } from 'react';
 import Menu from './components/menu/menu';
+import Skills from './components/skills/skills';
+import Projects from './components/projects/Projects';
 
 
 
@@ -15,7 +17,7 @@ import Menu from './components/menu/menu';
 
 function App() {
 
-  const [menuOpen,setmenuOpen]=useState(true);
+  const [menuOpen,setmenuOpen]=useState(false);
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
@@ -24,9 +26,12 @@ function App() {
       <div className='sections'> 
 
         <Intro/>
-        <Portfolio/>
+        
         <Works/>
+        <Skills/>
+        <Projects/>
         <Contact/>
+        
       
        </div>
 
