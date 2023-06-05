@@ -1,11 +1,12 @@
 import React from 'react'
+import './skillitem.scss';
 
-const SkillItem = ({href,title}) => {
+const SkillItem = ({src,title}) => {
   return (
     <div className='skill_item'>
 
-        <img href={href} alt='img'></img>
-        <h4>{}</h4>
+        <img src={src} alt='img'></img>
+        <h4>{title}</h4>
     </div>
   )
 }
