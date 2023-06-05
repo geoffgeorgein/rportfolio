@@ -42,7 +42,7 @@ const Projects = () => {
       };
 
   return (
-    <div className='projects '>
+    <div className='projects ' id='projects'>
 
     <div className='slider' style={{ transform: `translateX(-${currentslide * 100}vw)` }}>
 
