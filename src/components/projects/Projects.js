@@ -9,29 +9,36 @@ const Projects = () => {
         {
           id: "1",
           icon: "./assets/mobile.png",
-          title: "Web Design",
+          title: "Netflix Clone",
+          live_link:"https://netflic-clone-yt-965a2.web.app/",
+          github_link:"https://github.com/geoffgeorgein/Netflix-clone/tree/master",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            `A Netflix Clone made using React frontend and firebase Backend.Uses React Core features such as
+            useState,useEffect,useReducer `,
           img:
-            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+            "https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true",
         },
         {
           id: "2",
           icon: "./assets/globe.png",
-          title: "Mobile Application",
+          title: "Events App",
+          live_link:"https://events-app-iota-one.vercel.app/",
+          github_link:"https://github.com/geoffgeorgein/events_app",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "An Events App made using React and Next Js. Client Side Rendering using React. Server Side Rendering using NextJs",
           img:
-            "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+            "https://github.com/geoffgeorgein/events_app/blob/main/home.png?raw=true",
         },
         {
           id: "3",
           icon: "./assets/writing.png",
-          title: "Branding",
+          title: "Admin Dashboard",
+          live_link:"",
+          github_link:"https://github.com/geoffgeorgein/Admin-dashboard",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "An Admin Dashboard made using React and Material UI.",
           img:
-            "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+            "https://github.com/geoffgeorgein/Admin-dashboard/blob/main/Screenshot%202023-04-18%20125443.png?raw=true",
         },
       ];
 
@@ -65,7 +72,11 @@ const Projects = () => {
 
                         <h2>{d.title}</h2>
                         <p> {d.desc}</p>
-                        <span>Projects</span>
+                        <div className='links'>
+                            { d.live_link.length>1 && <span><a href={d.live_link}> Live Link</a> </span>}
+                            { d.github_link.length>1 && <span><a href={d.github_link}> GitHub Link</a> </span>}
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -74,7 +85,7 @@ const Projects = () => {
                 <div className='rightContainer'>
 
                     <div className='imgContainer'>
-                        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt='netflix clone'>
+                        <img src={d.img} alt='img'>
 
                         </img>
                     </div>
