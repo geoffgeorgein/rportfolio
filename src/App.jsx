@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Menu from './components/menu/menu';
 import Skills from './components/skills/skills';
 import Projects from './components/projects/Projects';
+import About from './components/about/About';
 
 
 
@@ -26,8 +27,8 @@ function App() {
       <div className='sections'> 
 
         <Intro/>
-        
-        <Works/>
+        <About/>
+        {/* <Works/> */}
         <Skills/>
         <Projects/>
         <Contact/>
