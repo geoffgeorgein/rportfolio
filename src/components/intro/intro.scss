@@ -3,6 +3,11 @@
 .intro{
     background-color: lightpink;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+      }
     
 
     .left{

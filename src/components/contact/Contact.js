@@ -11,7 +11,7 @@ const Contact = () => {
     setMessage(true)
   }
   return (
-    <div className='contact' id='contact'>Contact
+    <div className='contact' id='contact'>
 
       <div className='left'>
           <img src='assets/shake.svg' alt='img'></img>
