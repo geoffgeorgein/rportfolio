@@ -3,7 +3,7 @@
 .intro{
     background-color: lightpink;
     display: flex;
-    flex-direction: row;
+    
 
     .left{
         flex:0.5;
@@ -12,7 +12,7 @@
 
         .imgContainer{
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
             width: 600px;
             height: 600px;

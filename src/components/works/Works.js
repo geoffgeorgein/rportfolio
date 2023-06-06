@@ -47,44 +47,44 @@ export const Works = () => {
       <div className='container'>
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
 
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
 
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
 
 
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
 
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
 
         <div className='item'>
 
-        <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
-        <h3>Netflix Clone</h3>
+          <img src='https://github.com/geoffgeorgein/Netflix-clone/blob/master/Screenshot%202023-04-18%20125556.png?raw=true' alt=''></img>
+          <h3>Netflix Clone</h3>
 
         </div>
       </div>
