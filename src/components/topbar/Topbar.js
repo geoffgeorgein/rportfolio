@@ -3,6 +3,7 @@ import "./topbar.scss";
 import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
 
+
 const topbar = ({menuOpen,setmenuOpen}) => {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
@@ -18,11 +19,25 @@ const topbar = ({menuOpen,setmenuOpen}) => {
           <span>+91 6563 89XXX</span>
 
         </div>
+
+        
         
         <div className='itemContainer'>
         <MailIcon className='icon' />
 
         <span>geoffgeorgethommana@gmail.com</span>
+
+        </div>
+
+        <div className='itemContainer'>
+        <a href='https://github.com/geoffgeorgein'><i class="fa-brands fa-github"></i></a>
+        
+
+        </div>
+
+        <div className='itemContainer'>
+        <a href='https://www.linkedin.com/in/geoffgeorge45/'><i class="fa-brands fa-linkedin"></i></a>
+        
 
         </div>
 
