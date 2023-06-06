@@ -24,10 +24,19 @@
             background-color: crimson;
             border-radius: 50%;
             float: right;
+
+            @include mobile{
+                align-items: flex-start;
+                width: 100%;
+              }
             
 
             img{
-                height: 90%
+                height: 90%;
+
+                @include mobile{
+                    height: 50%;
+                  }
             }
         }
     }
@@ -47,6 +56,11 @@
             flex-direction: column;
             
             justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+              }
 
         a{
 
