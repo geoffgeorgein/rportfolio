@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .skill_item{
 
     margin-right: 30px;
@@ -10,6 +12,12 @@
     img{
         width: 100px;
         height:100px;
+
+        @include mobile{
+            height: 60px;
+            width: 60px;
+
+        }
     }
     h4{
         font-size: 14px;
