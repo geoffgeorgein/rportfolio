@@ -5,14 +5,19 @@
     background-color: white;
     display: flex;
     
+    
 
     @include mobile {
         flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
     }
 
     .left{
         flex: 1;
         overflow: hidden;
+        align-items: center;
+        justify-content: center;
 
         img{
             height: 100%;
