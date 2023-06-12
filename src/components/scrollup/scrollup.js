@@ -7,8 +7,8 @@ const Scrollup = () => {
 
     useEffect(()=>(
         window.addEventListener("scroll",function(){
-            if(this.scrollY>=1980){
-                console.log(this.scrollY);
+            if(this.scrollY>=1880){
+                // console.log(this.scrollY);
                 setarrow(true);
             }
             else{
