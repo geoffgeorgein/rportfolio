@@ -3,7 +3,7 @@ import './App.scss';
 import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
 
-import Works from './components/works/Works';
+// import Works from './components/works/Works';
 
 import Contact from './components/contact/Contact';
 import { useState } from 'react';
@@ -11,6 +11,7 @@ import Menu from './components/menu/menu';
 import Skills from './components/skills/skills';
 import Projects from './components/projects/Projects';
 import About from './components/about/About';
+import Scrollup from './components/scrollup/scrollup';
 
 
 
@@ -35,6 +36,8 @@ function App() {
         
       
        </div>
+
+       <Scrollup/>
 
     </div>
   );

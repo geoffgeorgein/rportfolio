@@ -1,0 +1,15 @@
+.scrollup{
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    width: 40px;
+    z-index: 5;
+    transform: translateY(100px);
+
+
+    &.active{
+        transform: translateY(0);
+    }
+    
+    
+}
