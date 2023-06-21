@@ -21,7 +21,7 @@ const Contact = () => {
 
         <h2> Contact</h2>
 
-        <form onSubmit={handlesubmit}>
+        <form onSubmit={handlesubmit} action="mailto:geoffgeorgethommana@gmail.com" method="post">
 
           <input type='text' placeholder='email'></input>
           <textarea placeholder='message'></textarea>
