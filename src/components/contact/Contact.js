@@ -9,6 +9,8 @@ const Contact = () => {
 
     e.preventDefault();
     setMessage(true)
+    // window.open('mailto:geoffgeorgethommana@gmail.com');
+    window.open('mailto:geoffgeorgethommana@gmail.com?subject=subject&body=body');
   }
   return (
     <div className='contact' id='contact'>
