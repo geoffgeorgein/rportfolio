@@ -14,18 +14,30 @@
         height: 60px;
         position: absolute;
         cursor: pointer;
+        
 
         @include mobile {
-            display: none;
+            
+            height: 20px;
+            color: black;
           }
 
         &.left{
             left: 100px;
             transform: rotateY(180deg);
+            @include mobile {
+            
+            left: 40px;
+          }
         }
 
         &.right{
             right: 100px;
+
+            @include mobile {
+            
+            right: 40px;
+          }
             
         }
 
@@ -69,8 +81,9 @@
 
                 @include mobile {
                     width: 80%;
-                    height: 150px;
+                    height: 250px;
                     margin: 15px 0;
+                    max-width: 400px;
                   }
 
                 .left{
@@ -161,6 +174,10 @@
                     img {
                         width: 400px;
                         transform: rotate(-10deg);
+                        overflow: hidden;
+                        @include mobile{
+                            width: 230px;
+                          }
                     }
 
 

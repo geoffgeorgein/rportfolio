@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './projects.scss';
+import { useEffect } from 'react';
 
 const Projects = () => {
 
@@ -38,15 +39,47 @@ const Projects = () => {
           desc:
             "An Admin Dashboard made using React and Material UI.",
           img:
-            "https://github.com/geoffgeorgein/Admin-dashboard/blob/main/Screenshot%202023-04-18%20125443.png?raw=true",
+            "https://raw.githubusercontent.com/geoffgeorgein/Admin-dashboard/main/public/homepage.png",
+        },
+        {
+          id: "4",
+          icon: "./assets/writing.png",
+          title: "Food Order App",
+          live_link:"",
+          github_link:"https://github.com/geoffgeorgein/Food-order-app",
+          desc:
+            "A SaaS App made using React and Context API.",
+          img:
+            "https://github.com/geoffgeorgein/Food-order-app/blob/main/public/Food_order_app.png?raw=true",
         },
       ];
 
-      const handleclick=(way)=>{
+      // const handleclick=(way)=>{
 
-        way==='left'?setcurrentslide(currentslide > 0 ? currentslide - 1 : data.length - 1):setcurrentslide(currentslide < data.length - 1?currentslide + 1:0);
+      //   way==='left'?setcurrentslide(currentslide > 0 ? currentslide - 1 : data.length - 1):setcurrentslide(currentslide < data.length - 1?currentslide + 1:0);
 
-      };
+      // };
+
+      useEffect(()=>{
+        
+        if(currentslide>data.length){
+          setcurrentslide(0);
+        }
+        if(currentslide<0){
+          setcurrentslide(data.length-1)
+        }
+
+      },[currentslide])
+
+      useEffect(()=>{
+        console.info("curr",currentslide);
+        let slider=setInterval(()=>{
+          setcurrentslide(currentslide+1);
+        },3000);
+
+        return ()=>clearInterval(slider);
+
+      },[currentslide]);
 
   return (
     <div className='projects ' id='projects'>
@@ -124,9 +157,9 @@ const Projects = () => {
 
 
 
-    <img className='arrow left' src='assets/arrow.png' alt='arrow' onClick={()=>handleclick('left')} /> 
+    <img className='arrow left' src='assets/arrow.png' alt='arrow' onClick={()=>setcurrentslide(currentslide-1)} /> 
 
-    <img className='arrow right' src='assets/arrow.png' alt='arrow' onClick={()=>handleclick('right')} / >
+    <img className='arrow right' src='assets/arrow.png' alt='arrow' onClick={()=>setcurrentslide(currentslide+1)} / >
     
     </div>
   )
