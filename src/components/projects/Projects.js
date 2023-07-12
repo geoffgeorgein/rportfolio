@@ -62,7 +62,7 @@ const Projects = () => {
 
       useEffect(()=>{
         
-        if(currentslide>data.length){
+        if(currentslide>=data.length){
           setcurrentslide(0);
         }
         if(currentslide<0){
