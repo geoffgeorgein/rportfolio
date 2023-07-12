@@ -51,59 +51,78 @@ const Projects = () => {
   return (
     <div className='projects ' id='projects'>
 
-    <div className='slider' style={{ transform: `translateX(-${currentslide * 100}vw)` }}>
+{
+        data.map((d,index)=>{
 
-    {
-        data.map((d)=>(
+            let position='nextSlide';
 
-            <div className='container' key={d.id}>
+            if(currentslide===index){
+              position='activeSlide';
+            }
 
-            <div className='item'>
+            if (
+            currentslide === index - 1 ||
+            (index === 0 && currentslide === data.length - 1)
+          ) {
+            position = 'lastSlide';
+          }
+            return (
 
-                <div className='left'>
+          <article className={position} >
 
-                    <div className='leftContainer'>
+          
+                    <div className='container' key={d.id}>
 
-                        <div className='imgContainer'>
-                            <img src={d.icon} alt='img'>
+                  <div className='item'>
 
-                            </img>
-                        </div>
+                      <div className='left'>
 
-                        <h2>{d.title}</h2>
-                        <p> {d.desc}</p>
-                        <div className='links'>
-                            { d.live_link.length>1 && <span><a href={d.live_link}> Live Link</a> </span>}
-                            { d.github_link.length>1 && <span><a href={d.github_link}> GitHub Link</a> </span>}
-                        </div>
-                        
-                    </div>
-                </div>
+                          <div className='leftContainer'>
 
-                <div className='right'>
+                              <div className='imgContainer'>
+                                  <img src={d.icon} alt='img'>
 
-                <div className='rightContainer'>
+                                  </img>
+                              </div>
 
-                    <div className='imgContainer'>
-                        <img src={d.img} alt='img'>
+                              <h2>{d.title}</h2>
+                              <p> {d.desc}</p>
+                              <div className='links'>
+                                  { d.live_link.length>1 && <span><a href={d.live_link}> Live Link</a> </span>}
+                                  { d.github_link.length>1 && <span><a href={d.github_link}> GitHub Link</a> </span>}
+                              </div>
+                              
+                          </div>
+                      </div>
 
-                        </img>
-                    </div>
+                      <div className='right'>
 
-                    
+                      <div className='rightContainer'>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                          <div className='imgContainer'>
+                              <img src={d.img} alt='img'>
+
+                              </img>
+                          </div>
+
+                          
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      {/* //slider */}
+              </article>
+            )
+            
 
 
-        ))
+        })
     }
 
         
 
-    </div>
+
 
     <img className='arrow left' src='assets/arrow.png' alt='arrow' onClick={()=>handleclick('left')} /> 
 
