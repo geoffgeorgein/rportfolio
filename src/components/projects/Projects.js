@@ -29,7 +29,7 @@ const Projects = () => {
           desc:
             "An interactive metaverseapplication using NextJs and framer motion",
           img:
-            "https://github.com/geoffgeorgein/events_app/blob/main/home.png?raw=true",
+            "https://github.com/geoffgeorgein/rportfolio/blob/main/src/assets/metaversus-img.jpg?raw=true",
         },
         {
           id: "3",
