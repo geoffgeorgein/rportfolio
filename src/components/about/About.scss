@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .content{
+        display: flex;
+        width: 70vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 45px;
+        margin-top: 10rem;
+        
+
+        @include mobile{
+            padding: 10px;
+          }
+
+        
+
+        p{
+            line-height: normal;
+            font-weight: 500;
+            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+
+            @include mobile{
+                font-size: 20px;
+              }
+
+        }
+        
+    }
+
+
+    h2{
+        margin: 10px;
+        font-size:40px;
+        position:absolute;
+        top: 5%;
+        @include mobile{
+            font-size: 30px;
+            margin: 4px;
+          }
+    }
+
+}

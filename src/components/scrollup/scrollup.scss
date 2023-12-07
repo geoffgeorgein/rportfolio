@@ -1,0 +1,25 @@
+@import "../../global.scss";
+
+.scrollup{
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    width: 40px;
+    z-index: 5;
+    transform: translateY(100px);
+    animation: arrowBlink 3s infinite;
+
+    @include mobile{
+
+        width:30px;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+
+
+    &.active{
+        transform: translateY(0);
+    }
+    
+    
+}
