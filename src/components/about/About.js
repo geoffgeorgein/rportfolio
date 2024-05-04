@@ -39,7 +39,7 @@ const About = () => {
 
     <div className='content'>
 
-        <p>Hello, I am Geoff George and I am a self-taught programmer who likes building products from scratch. I have taught myself the necessary skills and technologies to excel in the field of Web development, including HTML, CSS, JavaScript, React, Nodejs, Express  and various other frameworks and libraries. I am passionate about staying up-to-date with the latest tools and technologies, and I am always keen to learn new skills and take on new challenges.</p>
+        <p>Hello, I am Geoff George a self-taught programmer who likes building products from scratch. I have taught myself the necessary skills and technologies to excel in the field of Software Engineering, including HTML, CSS, JavaScript, React, Nodejs, Express  and various other frameworks and libraries. I am passionate about staying up-to-date with the latest tools and technologies, and I am always keen to learn new skills and take on new challenges. In my free time you can find me doing Competitive Programming and OpenSource.</p>
     </div>
     </motion.div>
   )
