@@ -53,17 +53,17 @@ const Skills = () => {
         <SkillItem src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' title='CSS'/>
         <SkillItem src='https://github.com/geoffgeorgein/rportfolio/blob/main/public/assets/JavaScript-logo.png?raw=true' title='JavaScript'/>
         <SkillItem src='https://github.com/geoffgeorgein/rportfolio/blob/main/public/assets/React-icon.svg.png?raw=true' title='ReactJs'/>
-        <SkillItem src='https://github.com/geoffgeorgein/rportfolio/blob/main/public/assets/redux.png?raw=true' title='Redux'/>
-        <SkillItem src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/192px-C_Sharp_Logo_2023.svg.png" title='C#'/>
+        <SkillItem src='https://1000logos.net/wp-content/uploads/2024/08/Azure-DevOps-Logo.png' />
+        <SkillItem src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/192px-C_Sharp_Logo_2023.svg.png"/>
         <SkillItem src='https://github.com/geoffgeorgein/rportfolio/blob/main/public/assets/Git-Icon.png?raw=true' title='Git'/>
         <SkillItem src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" title='Tailwind'/>
 
-        <SkillItem src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" title='MySQL'/>
-        <SkillItem src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png' title='Nodejs'/>
-        <SkillItem src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"title='Express'/>
-        <SkillItem src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" title='MongodB'/>
-        <SkillItem src='https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg' title='C++'/>
-        <SkillItem src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' title='Python'/>
+        <SkillItem src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Microsoft_SQL_Server_2025_icon.svg/800px-Microsoft_SQL_Server_2025_icon.svg.png" title='SQLServer'/>
+        <SkillItem src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png' />
+        <SkillItem src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"/>
+        <SkillItem src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" />
+        <SkillItem src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png' title='.'/>
+        <SkillItem src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' />
     </motion.div>
     <p></p>
     <p></p>
